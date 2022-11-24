@@ -1,0 +1,2 @@
+eureka.instance.ip-address: 172.16.3.3
+eureka.port: 8761

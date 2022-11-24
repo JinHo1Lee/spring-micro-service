@@ -1,0 +1,24 @@
+eureka.instance.ip-address: 172.16.3.3
+eureka.port: 8761
+
+zuul:
+  ribbon-isolation-strategy: thread
+  retryable: true
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis:  10000
+    max-per-route-connections: 20
+    max-total-connections: 200
+  ignoredServices: '*'
+  sensitiveHeaders:
+  add-host-header: true
+  add-proxy-headers: true
+  routes:
+    rest-server: 
+      path: /v1/**
+      service-id: rest-server
+      strip-prefix: false
+
+ribbon:
+  eureka:
+    enabled: true
