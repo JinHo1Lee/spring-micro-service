@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: auth-server
+  cloud:    
+    config:
+      uri: http://172.16.3.3:8889/admin
+      profile: dev
+      fail-fast: false
+      retry:  
+        max-attempts: 10
+      name: eureka-server
+
+logging:
+  file: auth-server.log
+  path: ./data/logs  
