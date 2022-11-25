@@ -12,4 +12,4 @@ spring:
 
 logging:
   file: auth-server.log
-  path: ./data/logs  
+  path: ./logs  

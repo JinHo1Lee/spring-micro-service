@@ -1,1 +1,1 @@
-# sprint-micro-service
+# spring-micro-service

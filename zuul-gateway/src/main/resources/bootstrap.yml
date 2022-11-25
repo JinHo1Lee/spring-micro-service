@@ -12,4 +12,4 @@ spring:
 
 logging:
   file: zuul-gateway.log
-  path: ./data/logs  
+  path: ./logs  
