@@ -8,7 +8,7 @@ spring:
       fail-fast: false
       retry:  
         max-attempts: 10
-      name: eureka-server, rest-server
+      name: rest-server
 
 logging:
   file: rest-server.log
