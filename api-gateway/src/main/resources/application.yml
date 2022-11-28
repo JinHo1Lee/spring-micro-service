@@ -25,3 +25,13 @@ eureka:
     status-page-url-path: ${management.endpoints.web.base-path}/info
     health-check-url-path: ${management.endpoints.web.base-path}/health
     prefer-ip-address: true
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: rest-server
+          uri: lb://REST-SERVER
+          predicates:
+            - Path=/v1/**
