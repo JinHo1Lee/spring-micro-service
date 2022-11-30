@@ -41,6 +41,12 @@ dependencies {
 	implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"
 
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
+
+    // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util
+    implementation group: 'com.google.protobuf', name: 'protobuf-java-util', version: '3.21.5'
+
 	implementation 'net.devh:grpc-server-spring-boot-starter:2.11.0.RELEASE'
 	
 	compileOnly 'org.projectlombok:lombok'
