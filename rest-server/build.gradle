@@ -30,19 +30,17 @@ ext {
 }
 
 dependencies {
-
-	// compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
-	// compile('org.springframework.cloud:spring-cloud-starter-config')
+
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 	compile('org.springframework.cloud:spring-cloud-starter-openfeign')
-	// compile group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '4.10'
+
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.cloud:spring-cloud-config-client')
 	compile('org.json:json:20220924')
-	compileOnly 'org.projectlombok:lombok:1.16.18'
-	// compile('com.fasterxml.jackson.core:jackson-databind:2.8.9')
-	// compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
